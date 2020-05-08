@@ -1,4 +1,5 @@
 const User = require('./user')
+const Movies = require('./movies')
 const db = require('../db')
 
 /**
@@ -15,7 +16,10 @@ const db = require('../db')
  * for example, we can say: const {User} = require('../db/models')
  * instead of: const User = require('../db/models/user')
  */
+//User.hasMany(Movies)
+
 module.exports = {
   User,
+  Movies,
   db
 }
