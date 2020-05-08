@@ -13,6 +13,7 @@ router.use('/puppies', require('./routes/puppies'))
 
 router.use('/users', require('./routes/users'))
 router.use('/example', require('./routes/example'))
+router.use('/movies', require('./routes/movies'))
 
 /*
 If someone makes a request that starts with `/api`,
