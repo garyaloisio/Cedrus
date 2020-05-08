@@ -11,7 +11,6 @@ class AllMovies extends React.Component {
 
   render() {
     const listOfAllMovies = this.props.movies
-    console.log('!!!!!', listOfAllMovies)
     return (
       <div>
         <h1>Movies</h1>
