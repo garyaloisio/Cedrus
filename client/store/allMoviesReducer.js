@@ -13,6 +13,7 @@ export function listMovies(data) {
 export default function allMoviesReducer(state = initialState, action) {
   switch (action.type) {
     case LIST_MOVIES:
+      console.log('HIT')
       return {...state, movieList: action.data}
     default:
       return state

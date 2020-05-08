@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import axios from 'axios'
 import {listMoviesThunk} from '../store/allMoviesReducer'
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class AllMovies extends React.Component {
   componentDidMount() {
@@ -35,7 +34,7 @@ class AllMovies extends React.Component {
 }
 
 const mapState = state => ({
-  movies: state.movieList
+  movies: state.allMoviesReducer.movieList
 })
 
 const mapDispatch = dispatch => ({
